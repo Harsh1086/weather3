@@ -1,0 +1,80 @@
+.a{
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100vw;
+     height:100vh;
+     background-image:url('https://i.pinimg.com/originals/96/df/d4/96dfd411ab0e68f8bc1eb47e4eee8771.gif');
+     background-size: cover;
+     background-position: center;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+}
+
+.b{
+    color:yellowgreen;
+    text-align: center;
+}
+
+#c{
+    background-color:purple;
+    margin-top: 10px;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    width:80%;
+    max-width: 300px;
+    cursor: pointer;
+
+    
+}
+
+#weather-result{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 22px;
+    padding: 20px;
+    max-width: 400px;
+    background: rgba(0,0,0,0.5);
+    border-radius: 10px;
+    width: 80%;
+    margin-top: 20px;
+    display: none;
+}
+
+#city{
+    
+    padding: 12px;
+    width: 80%;
+    max-width: 300px;
+    text-align: center;
+    border: 2px solid white;
+    border-radius: 5px;
+    font-size: 18px;
+    background: rgba(0,0,0,0.5);
+    color:white;
+    outline:none;
+}
+#city::placeholder {
+    color: rgba(255,255,255,0.7);
+}
+
+@media (max-width: 480px) {
+    .a {
+        padding: 15px;
+        height: 100vh;  /* Ensures full height on mobile */
+    }
+
+    #city, #c {
+        width: 90%;
+        font-size: 16px;
+    }
+
+    #weather-result {
+        width: 90%;
+        font-size: 18px;
+    }
+}
